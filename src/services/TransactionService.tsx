@@ -45,6 +45,16 @@ export class TransactionService {
       method: "DELETE",
     });
   }
+
+  static async uploadFile(file: File): Promise<void> {
+    const formData = new FormData();
+    formData.append("file", file);
+
+    await fetch(`${API_URL}/upload`, {
+      method: "POST",
+      body: formData,
+    });
+  }
 }
 
 export default TransactionService;

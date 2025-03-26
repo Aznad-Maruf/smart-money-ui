@@ -85,6 +85,9 @@ const Navbar: React.FC = () => {
                   <Link className="dropdown-item" to="/transaction/visualize">
                     Transaction Visualize
                   </Link>
+                  <Link className="dropdown-item" to="/transaction/upload">
+                    Upload Transaction File
+                  </Link>
                 </li>
               </ul>
             </li>

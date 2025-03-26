@@ -13,6 +13,7 @@ import CategoryListPage from "./pages/CategoryListPage";
 import TransactionCreatePage from "./pages/TransactionCreatePage";
 import TransactionListPage from "./pages/TransactionListPage";
 import TransactionVisualization from "./pages/TransactionVisualization";
+import TransactionFileUpload from "./pages/TransactionFileUpload";
 import Navbar from "./components/Navbar";
 import "./App.css";
 
@@ -37,6 +38,10 @@ const App: React.FC = () => {
               element={<TransactionVisualization />}
             />
             <Route path="/" element={<Navigate to="/message/list" />} />
+            <Route
+              path="/transaction/upload"
+              element={<TransactionFileUpload />}
+            />
           </Routes>
         </main>
       </div>
